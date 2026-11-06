@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacte - Institut Pedralbes</title>
+</head>
+<body>
+  <header>
+    <img src="img/logo.jpg" alt="Logotip de l'Institut Pedralbes" width="230" height="80">
+    <h1>Institut Pedralbes</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="informacio.html">Informacio</a></li>
+        <li><a href="contacte.html" aria-current="page">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contacte</h2>
+
+    <section>
+      <h3>Dades del centre</h3>
+      <address>
+        Institut Pedralbes<br>
+        Avinguda d'Esplugues, 40<br>
+        08034 Barcelona<br>
+        Districte de les Corts<br>
+      </address>
+    </section>
+
+    <section>
+      <h3>Formulari de contacte</h3>
+      <form action="#" method="post">
+        <p>
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom" required>
+        </p>
+        <p>
+          <label for="correu">Correu electronic:</label>
+          <input type="email" id="correu" name="correu" required>
+        </p>
+        <p>
+          <label for="motiu">Motiu de contacte:</label>
+          <select id="motiu" name="motiu">
+            <option value="matricula">Preinscripcio i matricula</option>
+            <option value="eso">Informacio sobre ESO</option>
+            <option value="batxillerat">Informacio sobre Batxillerat</option>
+            <option value="cicles">Informacio sobre cicles formatius</option>
+            <option value="altres">Altres</option>
+          </select>
+        </p>
+        <p>
+          <label for="missatge">Missatge:</label><br>
+          <textarea id="missatge" name="missatge" rows="6" cols="40" required></textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="condicions" name="condicions" required>
+          <label for="condicions">Accepto la politica de privacitat i el tractament de les meves dades.</label>
+        </p>
+        <p>
+          <button type="submit">Envia</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
